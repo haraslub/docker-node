@@ -54,8 +54,8 @@ app.use(session({
 app.use(express.json()) // to ensure that body gets to attach to the request object
 
 app.get("/api/v1", (req, res) => {
-    res.send("<h2>Hi There!!!</h2>")
-    console.log("It ran!!!")
+    res.send("<h2>!!!Hi There!!!</h2>")
+    console.log("It ran!!!") // to test nginx working properly
 })
 
 app.use("/api/v1/posts", postRouter)
